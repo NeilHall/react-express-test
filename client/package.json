@@ -2,38 +2,32 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint:errorsonly": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "lint": "eslint \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "5.0.1"
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jest": "^23.8.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.19.0",
-    "prettier": "^2.0.5"
-  },
-  "proxy": "http://localhost:5000",
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@eslint/js": "^9.39.5",
+    "@vitejs/plugin-react": "^6.0.4",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.8.0",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.9.6",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
+  }
 }
